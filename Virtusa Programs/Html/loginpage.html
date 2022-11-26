@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                border: 3px solid black;
+            }
+            </style>
+        <title>
+        https://www.login_page.com/
+        </title>
+        <link rel="icon" href="user.webp">
+    </head>
+    <body>
+        <script>
+            function validateform(){  
+                var name=document.myform.name.value;  
+                var password=document.myform.password.value;  
+                if (name==null || name==""){  
+                    alert("Name can't be blank");  
+                    return false;  
+                }
+                else if(password.length<6){  
+                    alert("Password must be at least 6 characters long.");  
+                    return false;  
+                }  
+            }  
+            </script>
+            <br><br><br>
+            <center><img src="user.webp" width="200"></img></center>
+        <h4 style="color:red;"><marquee>Hello!!! Welcome to the Login page</marquee></h4>
+        <h2><center style="color:red;">ADMIN LOGIN</center></h2>
+        <form name="myform" action="details.html" onsubmit="return validateform()" >
+            <table align="center" height="15%">
+                <tr><td>Username : </td><td><input type="name" name="name" placeholder="Enter the username" maxlength="25"></td></tr>
+                <tr>
+                    <td>Password : </td>
+                    <td><input type="password" name="password" placeholder="Enter the password" maxlength="8"></td>
+                    <tr><td>
+                        <input type="submit" value="Login"></td></tr>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
